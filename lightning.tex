@@ -1,0 +1,136 @@
+\documentclass[a4paper,14pt]{extarticle}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english, russian]{babel}
+
+\usepackage{misccorr}
+\usepackage{amssymb,amsfonts,amsmath,amsthm}  
+\usepackage{indentfirst}
+\usepackage[usenames,dvipsnames]{color} 
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{makecell,multirow} 
+\usepackage{ulem}
+\usepackage{graphicx,wrapfig}
+\graphicspath{{img/}}
+
+\renewcommand{\labelenumii}{\theenumii)} 
+\newcommand{\mean}[1]{\langle#1\rangle}
+
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\const}{const}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float}
+\usepackage[mode=buildnew]{standalone}
+\usepackage[outline]{contour}
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % for parts
+% \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % for chapters
+\usepackage{pgfplots,pgfplotstable,booktabs,colortbl}
+\usepackage{physics}
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs=true}
+
+\newcommand*\dotvec[1][1,1]{\crossproducttemp#1\relax}
+\def\crossproducttemp#1,#2\relax{{\qty[\vec{#1}\times\vec{#2}\,]}}
+
+\newcommand*\prodvec[1][1,1]{\crossproducttempa#1\relax}
+\def\crossproducttempa#1,#2\relax{{\qty[{#1}\times{#2}\,]}}
+% \usepackage{showframe}
+\usepackage[]{geometry}
+\geometry{
+  left=2.5cm,
+  right=1.5cm,
+  top=2cm,
+  bottom=2cm,
+  bindingoffset=0cm,
+  headheight=17pt
+}
+\linespread{1.5} 
+\setlength{\parindent}{1.25cm}
+\frenchspacing 
+\usepackage{setspace}
+
+\begin{document}
+
+\begin{titlepage}
+  \begin{center}
+    {\fontsize{ 12pt }{ 12pt } \selectfont \bf 
+    МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ \\[-10pt] 
+    РОССИЙСКОЙ ФЕДЕРАЦИИ}\\
+    \vspace{12pt}
+    \begin{spacing}{1}
+      {\bf  Федеральное государственное автономное \\
+      образовательное учреждение высшего образования \\
+      <<Национальный исследовательский Нижегородский \\ 
+      государственный университет им. Н.И. Лобачевского>>
+      }
+    \end{spacing}
+    \vspace{24pt}
+    \begin{spacing}{1}
+      Радиофизический факультет\\
+      Кафедра общей физики\\
+      \vspace{20pt}
+      Направление <<Фундаментальная радиофизика>>\\
+      \vspace{20pt}
+      ОТЧЕТ ПО $\ldots$ ПРАКТИКЕ
+    \end{spacing}
+    \vspace{100pt}
+    \begin{equation}
+      \begin{aligned}
+        &\text{Руководитель практики:}\quad &\text{Мареев Е.\,А.}\\
+        &\text{Студент 3-го курса бакалавриата:}\quad &\text{Сарафанов Ф.\,Г.}
+      \end{aligned}
+    \end{equation}
+  \end{center}
+  \vfill
+  \begin{center}
+    {Нижний Новгород, 2019}
+  \end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+\section*{Введение}
+\addcontentsline{toc}{section}{Введение}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Теоретическая часть}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\addcontentsline{toc}{section}{Список литературы}
+\begin{thebibliography}{99}
+\bibitem{land} Ландау Л.Д., Лифшиц Е.М. Теоретическая физика: т.5, Статистическая физика. - М.: Физматлит, 2005. - 616 с.
+\end{thebibliography}
+
+\end{document}
