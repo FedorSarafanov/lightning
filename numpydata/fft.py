@@ -2,9 +2,9 @@ import numpy as np
 from matplotlib import pyplot as plt 
 import scipy.fftpack
 
-i=0
+i=10
 data=np.load('../numpydata/data'+str(i)+'.npy')
-y=data[0]
+y=data[2]
 N=len(y)
 
 

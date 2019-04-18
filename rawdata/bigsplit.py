@@ -45,4 +45,15 @@ for i in range(0,100):
 	temp=data.T[start:final].T 
 	np.save('../numpydata/data'+str(i)+'.npy', temp)
 	print('writen ',i)
+
 print('Data writen to numpy binary files')
+
+a0=data[0][::10000]
+a1=data[1][::10000]
+a2=data[2][::10000]
+a3=data[3][::10000]
+
+temp=np.array([a0,a1,a2,a3])
+np.save('../numpydata/fastview.npy', temp)
+
+print('Fast data writen to numpy binary files')
