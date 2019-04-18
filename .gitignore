@@ -1,0 +1,21 @@
+# Specify filepatterns you want git to ignore.
+
+*.dsf
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.idx
+*.ilg
+*.ind
+*.ist
+*.bak
+*.sav
